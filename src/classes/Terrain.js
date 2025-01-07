@@ -20,12 +20,12 @@ export default class Terrain {
   constructor({
     scene,
     loadingManager,
-    width = 250,
-    depth = 250,
-    detail = { width: 94, height: 94 },
-    propsPerChunk = 2,
+    width = 2000,
+    depth = 2000,
+    detail = { width: 282, height: 282 },
+    propsPerChunk = 1,
     chunkSize = 10,
-    renderDistance = 50,
+    renderDistance = 25,
   }) {
     this.scene = scene;
     this.width = width;
