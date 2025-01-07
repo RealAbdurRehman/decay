@@ -139,17 +139,6 @@ export function updateGame(
   return gameOver;
 }
 
-export function restartGame(player, crosshair, controls) {
-  player.restart();
-  crosshair.restart();
-  drops.forEach((drop) => {
-    drop.remove();
-  });
-  enemies.forEach((enemy) => {
-    enemy.remove();
-  });
-  enemies = [];
-  enemiesKilled = 0;
-  player.effects.damage.element.style.opacity = 0;
-  controls.lock();
+export function restartGame() {
+  window.location.reload();
 }
