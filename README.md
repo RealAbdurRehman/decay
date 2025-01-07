@@ -53,6 +53,6 @@ Decay is an intense, action-packed survival shooter that immerses players in a d
 
 ## License
 
-This game is open-source and licensed under the MIT License. See the [LICENSE]() file for details.
+This game is open-source and licensed under the MIT License. See the [LICENSE](https://github.com/RealAbdurRehman/decay/blob/main/LICENSE) file for details.
 
 Can you fight your way through the decay?
