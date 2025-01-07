@@ -23,6 +23,7 @@ Decay is an intense, action-packed survival shooter that immerses players in a d
 - **Realistic Gunplay**: Experience dynamic, action-driven gunplay where your accuracy and effectiveness change based on your actions. Sprinting and firing on the move reduce your precision, while crouching or aiming down sights significantly improve your shot accuracy and control. Adapt to the environment and your actions to master every encounter.
 - **Dynamic Environments**: Experience a constantly shifting world, where the map changes with every playthrough, forcing you to rethink your strategy.
 - **Several Enemy Types**: Face a diverse array of enemies, making you adapt to the threats to survive.
+- **Minimap**: Keep track of your surroundings with a dynamic minimap that updates in real-time.
 
 ## 🕹️ **Controls**
 
