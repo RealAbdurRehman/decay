@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { Armor, Health } from "../classes/Drops.js";
 
 const timeToNewDrops = { armor: 0, health: 0 };
-const dropIntervals = { armor: 40000, health: 30000 };
+const dropIntervals = { armor: 70000, health: 60000 };
 
 function getRandomPointOnCircle(center, radius) {
   const angle = Math.random() * Math.PI * 2;
