@@ -94,7 +94,7 @@ export default class Player {
       damage: {
         new: 0,
         interval: 150,
-        amount: () => Math.floor(Math.random() * 6 + 5),
+        amount: () => Math.floor(Math.random() * 2 + 3),
       },
       painSound: {
         lastPlayed: 0,
@@ -113,7 +113,7 @@ export default class Player {
       damage: {
         new: 0,
         interval: 150,
-        amount: () => Math.floor(Math.random() * 6 + 5),
+        amount: () => Math.floor(Math.random() * 3 + 2),
       },
       hasPlayedBreakSound: false,
     };
