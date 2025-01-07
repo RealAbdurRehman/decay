@@ -107,17 +107,4 @@ export default class Crosshair {
     });
     this.crosshair.visible = true;
   }
-  restart() {
-    this.hidden = false;
-    this.spread = 0;
-    this.position = new THREE.Vector3(0, 0, -1);
-    this.crosshair.position.copy(this.position);
-    this.currentSize = this.baseSize;
-    this.targetSize = this.baseSize;
-    this.currentZ = -1;
-    this.targetZ = -1;
-    this.currentOpacity = 1;
-    this.targetOpacity = 1;
-    this.recoilSize = 0;
-  }
 }
