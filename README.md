@@ -12,7 +12,7 @@ Decay is an intense, action-packed survival shooter that immerses players in a d
 <p align="center">
 	<img src="" alt="Demo">
 	<br>
-	<a href="">Live demo</a>
+	<a href="https://decay-psi.vercel.app">Live demo</a>
 	<br>
 </p>
 
