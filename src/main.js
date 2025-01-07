@@ -16,7 +16,7 @@ const camera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
   0.1,
-  1000
+  10000
 );
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 
@@ -126,32 +126,39 @@ function initGame() {
   const restartButton = document.getElementById("restart");
   restartButton.addEventListener("click", function () {
     const deathScreen = document.getElementById("death-screen");
-    restartGame(player, crosshair);
+    restartGame(player, crosshair, controls);
     gameOver = false;
     deathScreen.style.display = "none";
     animate(0);
   });
 }
 
+let lastTime = 0;
+let timeToNewFrame = 0;
+let deltaTime = 0;
+const fps = 60;
+const frameInterval = 1000 / fps;
 function animate(timestamp) {
-  if (gameOver) {
-    controls.unlock();
-    return;
-  }
-  gameOver = updateGame(
-    gameInitialized,
-    timestamp,
-    scene,
-    loadingManager,
-    player,
-    terrain,
-    controls,
-    crosshair,
-    gameOver,
-    listener,
-    miniMap
-  );
-  renderer.render(scene, camera);
+  if (gameOver) return;
+  deltaTime = timestamp - lastTime;
+  if (timeToNewFrame >= frameInterval) {
+    lastTime = timestamp;
+    gameOver = updateGame(
+      gameInitialized,
+      deltaTime,
+      scene,
+      loadingManager,
+      player,
+      terrain,
+      controls,
+      crosshair,
+      gameOver,
+      listener,
+      miniMap,
+    );
+    renderer.render(scene, camera);
+    timeToNewFrame = 0;
+  } else timeToNewFrame += deltaTime;
   if (!gameOver) requestAnimationFrame(animate);
 }
 
