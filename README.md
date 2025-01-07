@@ -49,7 +49,7 @@ Decay is an intense, action-packed survival shooter that immerses players in a d
 ## 📷 Demo
 
 ![Demo 1]()
-![Demo 2]()
+![Demo 2](https://cloud-me7ydtlpb-hack-club-bot.vercel.app/0dec_9_screenshot_from_resize_images.jpg)
 
 ## License
 
