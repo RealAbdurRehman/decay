@@ -125,11 +125,7 @@ function initGame() {
 
   const restartButton = document.getElementById("restart");
   restartButton.addEventListener("click", function () {
-    const deathScreen = document.getElementById("death-screen");
-    restartGame(player, crosshair, controls);
-    gameOver = false;
-    deathScreen.style.display = "none";
-    animate(0);
+    restartGame();
   });
 }
 
