@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cloud-80ibom26b-hack-club-bot.vercel.app/0decay.png">
+  <img width="500" src="https://cloud-80ibom26b-hack-club-bot.vercel.app/0decay.png">
   <br />
   <i>Stand against the decay</i>
   <br />
@@ -26,21 +26,21 @@ Decay is an intense, action-packed survival shooter that immerses players in a d
 
 ## 🕹️ **Controls**
 
-| Action               | Key              |
-| -------------------- | ---------------- |
-| Move Forward         | `W`              |
-| Move Backward        | `S`              |
-| Move Left            | `A`              |
-| Move Right           | `D`              |
-| Crouch               | `C`              |
-| Sprint               | `Shift`          |
-| Jump                 | `Space`          |
-| Shoot / Lock Pointer | Left Click       |
-| Aim Down Sights      | Right Click      |
-| Reload               | `R`              |
-| Controls             | `P`              |
-| Exit pointer lock    | `Esc`            |
-| Aim your gun         | `Mouse Movement` |
+| Action               | Key                  |
+| -------------------- | -------------------- |
+| Move Forward         | `W`                  |
+| Move Backward        | `S`                  |
+| Move Left            | `A`                  |
+| Move Right           | `D`                  |
+| Crouch               | `C`                  |
+| Reload               | `R`                  |
+| Sprint               | `Shift`              |
+| Jump                 | `Space`              |
+| Shoot / Lock Pointer | `Left Mouse Button`  |
+| Aim Down Sights      | `Right Mouse Button` |
+| Aim your gun         | `Mouse Movement`     |
+| Controls             | `P`                  |
+| Exit pointer lock    | `Esc`                |
 
 ## 🛠️ **Technologies Used**
 
@@ -49,7 +49,7 @@ Decay is an intense, action-packed survival shooter that immerses players in a d
 ## 📷 Demo
 
 ![Demo 1]()
-![Demo 2](https://cloud-me7ydtlpb-hack-club-bot.vercel.app/0dec_9_screenshot_from_resize_images.jpg)
+![Demo 2]()
 
 ## License
 
