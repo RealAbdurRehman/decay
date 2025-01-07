@@ -13,6 +13,7 @@ export default class MiniMap {
     this.crosshairOpacity = 1;
     this.targetCrosshairOpacity = 1;
     this.opacityTransitionSpeed = 0.125;
+    this.enemyMarkers = new Map();
     this.init();
     this.createPlayerMarker();
   }
@@ -40,6 +41,41 @@ export default class MiniMap {
     this.playerMarker.add(triangle);
     this.playerMarker.position.y = 25;
     this.mainScene.add(this.playerMarker);
+  }
+  createEnemyMarker() {
+    const marker = new THREE.Group();
+    const circleGeometry = new THREE.CircleGeometry(0.4, 32);
+    const circleMaterial = new THREE.MeshBasicMaterial({ 
+      color: 0xff0000,
+      transparent: true,
+      opacity: 0.8
+    });
+    const circle = new THREE.Mesh(circleGeometry, circleMaterial);
+    circle.rotation.x = -Math.PI / 2;
+    circle.scale.set(5, 5, 5);
+    marker.add(circle);
+    marker.position.y = 25;
+    return marker;
+  }
+  updateEnemyMarkers(enemies) {
+    for (const [enemy, marker] of this.enemyMarkers.entries()) {
+      if (enemy.states.dead) {
+        this.mainScene.remove(marker);
+        this.enemyMarkers.delete(enemy);
+      }
+    }
+    enemies.forEach(enemy => {
+      if (!enemy.states.dead) {
+        let marker = this.enemyMarkers.get(enemy);
+        if (!marker) {
+          marker = this.createEnemyMarker();
+          this.mainScene.add(marker);
+          this.enemyMarkers.set(enemy, marker);
+        }
+        marker.position.x = enemy.position.x;
+        marker.position.z = enemy.position.z;
+      }
+    });
   }
   updateCameraPosition() {
     this.camera.position.set(
@@ -75,7 +111,7 @@ export default class MiniMap {
       child.material.opacity = this.crosshairOpacity;
     });
   }
-  update() {
+  update(enemies = []) {
     const light = new THREE.AmbientLight(0xffffff, 1);
     this.mainScene.add(light);
     const originalFog = this.mainScene.fog;
@@ -86,6 +122,7 @@ export default class MiniMap {
     this.displayCrosshair(false);
     this.updateCameraPosition();
     this.updatePlayerMarker();
+    this.updateEnemyMarkers(enemies);   
     this.renderer.render(this.mainScene, this.camera);
     this.mainScene.remove(light);
     this.mainScene.fog = originalFog;
