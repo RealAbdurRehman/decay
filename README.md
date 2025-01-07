@@ -10,7 +10,7 @@
 Decay is an intense, action-packed survival shooter that immerses players in a decaying world overrun by relentless monsters. As the monsters rise and chaos spreads, only the strongest will survive. With limited resources and no second chances, you'll face wave after wave of horrifying creatures, relying on lightning-fast reflexes, strategic combat, and precision shooting to stay alive.
 
 <p align="center">
-	<img src="" alt="Demo">
+	<img src="https://cloud-cittgrs28-hack-club-bot.vercel.app/0preview1.jpeg" alt="Demo">
 	<br>
 	<a href="https://decay-psi.vercel.app">Live demo</a>
 	<br>
@@ -49,8 +49,8 @@ Decay is an intense, action-packed survival shooter that immerses players in a d
 
 ## 📷 Demo
 
-![Demo 1]()
-![Demo 2]()
+![Demo 1](https://cloud-a1q2qx9t2-hack-club-bot.vercel.app/0preview2.jpeg)
+![Demo 2](https://cloud-ow4263qgj-hack-club-bot.vercel.app/0preview3.jpeg)
 
 ## License
 
