@@ -895,47 +895,4 @@ export default class Player {
     );
     return collision.y;
   }
-  restart() {
-    this.isIdle = false;
-    this.isMoving = false;
-    this.isScoping = false;
-    this.isShooting = false;
-    this.canShoot = true;
-    this.isReloading = false;
-    this.isCrouching = false;
-    this.isSprinting = false;
-    this.hideCrosshair = false;
-    this.position = new THREE.Vector3(0, 0.65, 25);
-    this.velocity = new THREE.Vector3();
-    this.rotation = new THREE.Quaternion();
-    this.camera.quaternion.copy(this.rotation);
-    this.gunRotation = { x: 0, y: 0, z: 0.1 };
-    this.gunOffset = { x: 0.25, y: -0.4, z: -0.25 };
-    this.normalGunOffset = { x: 0.25, y: -0.4, z: -0.25 };
-    this.scopedGunOffset = { x: 0, y: -0.2125, z: -0.2 };
-    this.moveSpeed = 0.2;
-    this.lastJumpTime = 0;
-    this.bobCycle = 0;
-    this.targetBobAmount = 0;
-    this.currentBobAmount = 0;
-    this.sprintRotation = 0;
-    this.targetSprintRotation = 0;
-    this.projectiles.forEach((projectile) => {
-      projectile.remove();
-    });
-    this.projectiles = [];
-    this.timeToNewProjectile = 0;
-    this.muzzleFlashes = [];
-    this.spreadAmount = 0.1;
-    this.health.current = this.health.max;
-    this.health.damage.new = 0;
-    this.armor.current = 25;
-    this.armor.damage.new = 0;
-    this.ammo.current = this.ammo.max;
-    this.elements.ammo.chambered.state = false;
-    this.input.keys = [];
-    this.input.mouse.left = false;
-    this.input.mouse.right = false;
-    this.mixer.stopAllAction();
-  }
 }
