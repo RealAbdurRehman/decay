@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="500" src="https://cloud-80ibom26b-hack-club-bot.vercel.app/0decay.png">
+  <img width="400" src="https://cloud-80ibom26b-hack-club-bot.vercel.app/0decay.png">
   <br />
   <i>Stand against the decay</i>
   <br />
