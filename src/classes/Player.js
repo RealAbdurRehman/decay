@@ -48,7 +48,7 @@ export default class Player {
     this.scopedGunOffset = { x: 0, y: -0.2125, z: -0.2 };
     this.weight = 0.025;
     this.moveSpeed = 0.2;
-    this.jumpForce = 0.5;
+    this.jumpForce = 0.3;
     this.tiltSpeed = 0.015;
     this.lastJumpTime = 0;
     this.jumpCooldown = 1.25;
