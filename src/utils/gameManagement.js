@@ -104,7 +104,7 @@ export function updateGame(
   crosshair,
   gameOver,
   listener,
-  miniMap,
+  miniMap
 ) {
   if (!gameInitialized) return;
   controls.update();
@@ -127,7 +127,15 @@ export function updateGame(
       listener
     );
   updateDrops(player);
-  spawnDrops(drops, deltaTime, scene, loadingManager, terrain, listener, player);
+  spawnDrops(
+    drops,
+    deltaTime,
+    scene,
+    loadingManager,
+    terrain,
+    listener,
+    player
+  );
   miniMap.update();
   updateUI();
   if (player.health.current <= 0) {
