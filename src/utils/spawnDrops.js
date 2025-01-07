@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { Armor, Health } from "../classes/Drops.js";
 
 const timeToNewDrops = { armor: 0, health: 0 };
-const dropIntervals = { armor: 40000, health: 30000 };
+const dropIntervals = { armor: 15000, health: 10000 };
 
 function getPosition({ terrain, buffer }) {
   return new THREE.Vector3(
