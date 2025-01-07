@@ -9,9 +9,6 @@ let enemies = [];
 const maxEnemies = 15;
 let enemiesKilled = 0;
 
-let lastTime = 0;
-let deltaTime = 0;
-
 function showDamageOverlay(player) {
   if (player.health.current < 67 && player.health.current > 34)
     player.effects.damage.setSrc("/Player/damage2.png");
@@ -24,7 +21,7 @@ function showDamageOverlay(player) {
   }, 1000);
 }
 
-function updateEnemies(player) {
+function updateEnemies(player, deltaTime) {
   enemies.forEach((enemy, enemyIndex) => {
     if (!enemy.states.loaded) return;
     player.projectiles.forEach((projectile, projectileIndex) => {
@@ -98,7 +95,7 @@ function updateUI() {
 
 export function updateGame(
   gameInitialized,
-  timestamp,
+  deltaTime,
   scene,
   loadingManager,
   player,
@@ -107,11 +104,9 @@ export function updateGame(
   crosshair,
   gameOver,
   listener,
-  miniMap
+  miniMap,
 ) {
   if (!gameInitialized) return;
-  deltaTime = timestamp - lastTime;
-  lastTime = timestamp;
   controls.update();
   player.update(deltaTime);
   crosshair.update(
@@ -120,7 +115,7 @@ export function updateGame(
     player.recoil.verticalAngle
   );
   terrain.updateProps(player.position);
-  updateEnemies(player);
+  updateEnemies(player, deltaTime);
   if (enemies.length < maxEnemies)
     spawnEnemies(
       enemies,
@@ -139,14 +134,12 @@ export function updateGame(
     gameOver = true;
     player.health.elements.display.innerHTML = 0;
     player.sounds.footsteps.sound.stop();
-    startDeathSequence(enemiesKilled);
+    startDeathSequence(enemiesKilled, controls);
   }
   return gameOver;
 }
 
-export function restartGame(player, crosshair) {
-  lastTime = 0;
-  deltaTime = 0;
+export function restartGame(player, crosshair, controls) {
   player.restart();
   crosshair.restart();
   drops.forEach((drop) => {
@@ -158,4 +151,5 @@ export function restartGame(player, crosshair) {
   enemies = [];
   enemiesKilled = 0;
   player.effects.damage.element.style.opacity = 0;
+  controls.lock();
 }
