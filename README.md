@@ -19,11 +19,11 @@ Decay is an intense, action-packed survival shooter that immerses players in a d
 ## 🎮 **Gameplay Overview**
 
 - **Objective**: Survive for as long as you can by skillfully dodging relentless monsters, collecting valuable pickups, and using your gun to eliminate threats with deadly precision.
-- **Pickups**: Gather essential items like Health drops to prolong your survival and stay one step ahead of the relentless threat.
+- **Pickups**: Gather essential items like Health drops and Armor drops to prolong your survival and stay one step ahead of the relentless threat.
 - **Realistic Gunplay**: Experience dynamic, action-driven gunplay where your accuracy and effectiveness change based on your actions. Sprinting and firing on the move reduce your precision, while crouching or aiming down sights significantly improve your shot accuracy and control. Adapt to the environment and your actions to master every encounter.
 - **Dynamic Environments**: Experience a constantly shifting world, where the map changes with every playthrough, forcing you to rethink your strategy.
 - **Several Enemy Types**: Face a diverse array of enemies, making you adapt to the threats to survive.
-- **Minimap**: Keep track of your surroundings with a dynamic minimap that updates in real-time.
+- **Minimap**: Stay aware of your environment with a dynamic minimap that updates in real-time, offering valuable insights to help players strategize and plan their next move effectively.
 
 ## 🕹️ **Controls**
 
