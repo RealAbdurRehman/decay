@@ -22,7 +22,7 @@ export default class Terrain {
     loadingManager,
     width = 2000,
     depth = 2000,
-    detail = { width: 282, height: 282 },
+    detail = { width: 762, height: 762 },
     propsPerChunk = 6,
     chunkSize = 25,
     renderDistance = 25,
