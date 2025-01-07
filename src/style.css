@@ -117,13 +117,13 @@ body {
   position: fixed;
   font-size: 4rem;
   left: -40px;
-  bottom: -53px;
+  bottom: -68px;
 }
 
 .armor-symbol {
   font-size: 2.25rem;
   left: 8px;
-  bottom: -50px;
+  bottom: -47px;
 }
 
 #health,
