@@ -2,19 +2,21 @@ import * as THREE from "three";
 import { Armor, Health } from "../classes/Drops.js";
 
 const timeToNewDrops = { armor: 0, health: 0 };
-const dropIntervals = { armor: 15000, health: 10000 };
+const dropIntervals = { armor: 40000, health: 30000 };
 
-function getPosition({ terrain, buffer }) {
-  return new THREE.Vector3(
-    THREE.MathUtils.randFloat(
-      terrain.boundaries.left + buffer,
-      terrain.boundaries.right - buffer
-    ),
-    0,
-    THREE.MathUtils.randFloat(
-      terrain.boundaries.back + buffer,
-      terrain.boundaries.front - buffer
-    )
+function getRandomPointOnCircle(center, radius) {
+  const angle = Math.random() * Math.PI * 2;
+  const x = center.x + radius * Math.cos(angle);
+  const z = center.z + radius * Math.sin(angle);
+  return new THREE.Vector3(x, -0.9, z);
+}
+
+function isWithinBoundaries(position, boundaries) {
+  return (
+    position.x >= boundaries.left &&
+    position.x <= boundaries.right &&
+    position.z >= boundaries.back &&
+    position.z <= boundaries.front
   );
 }
 
@@ -52,9 +54,24 @@ export default function spawnDrops(
   scene,
   loadingManager,
   terrain,
-  listener
+  listener,
+  player
 ) {
-  const position = getPosition({ terrain, buffer: 5 });
-  spawnArmor(dropsArray, deltaTime, scene, loadingManager, position, listener);
-  spawnHealth(dropsArray, deltaTime, scene, loadingManager, position, listener);
+  const spawnRadius = 25;
+    let spawnPosition = getRandomPointOnCircle(player.position, spawnRadius);
+    const boundaries = {
+      front: terrain.boundaries.front,
+      back: terrain.boundaries.back,
+      left: terrain.boundaries.left,
+      right: terrain.boundaries.right,
+    };
+    let attempts = 0;
+    while (!isWithinBoundaries(spawnPosition, boundaries) && attempts < 8) {
+      spawnPosition = getRandomPointOnCircle(player.position, spawnRadius);
+      attempts++;
+    }
+    if (isWithinBoundaries(spawnPosition, boundaries)) {
+      spawnArmor(dropsArray, deltaTime, scene, loadingManager, spawnPosition, listener);
+      spawnHealth(dropsArray, deltaTime, scene, loadingManager, spawnPosition, listener);
+    }
 }
