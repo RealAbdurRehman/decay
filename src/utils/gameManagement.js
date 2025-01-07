@@ -136,7 +136,7 @@ export function updateGame(
     listener,
     player
   );
-  miniMap.update();
+  miniMap.update(enemies);
   updateUI();
   if (player.health.current <= 0) {
     gameOver = true;
