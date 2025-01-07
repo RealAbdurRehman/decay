@@ -1,0 +1,11 @@
+Model Information:
+* title:	Zombie
+* source:	https://sketchfab.com/3d-models/zombie-73ef58af341e46afba1da53366ed79cf
+* author:	pxltiger (https://sketchfab.com/pxltiger)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Zombie" (https://sketchfab.com/3d-models/zombie-73ef58af341e46afba1da53366ed79cf) by pxltiger (https://sketchfab.com/pxltiger) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

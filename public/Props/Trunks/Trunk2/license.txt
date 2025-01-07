@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Psx TreeTrunk
+* source:	https://sketchfab.com/3d-models/low-poly-psx-treetrunk-2ff8d393dd514fa5b4deca5f32255690
+* author:	SaukrDev (https://sketchfab.com/SaukrDev)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Psx TreeTrunk" (https://sketchfab.com/3d-models/low-poly-psx-treetrunk-2ff8d393dd514fa5b4deca5f32255690) by SaukrDev (https://sketchfab.com/SaukrDev) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stylized Bush Low Poly
+* source:	https://sketchfab.com/3d-models/stylized-bush-low-poly-29b0e816028b47c081c786819fbb91a0
+* author:	Gatyh Interactive (https://sketchfab.com/lucas.antongomez)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stylized Bush Low Poly" (https://sketchfab.com/3d-models/stylized-bush-low-poly-29b0e816028b47c081c786819fbb91a0) by Gatyh Interactive (https://sketchfab.com/lucas.antongomez) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

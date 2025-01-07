@@ -1,0 +1,8 @@
+Model Information:
+* title:	Green Bush
+* source:	https://sketchfab.com/3d-models/green-bush-17222d8d3374471cb384281d45c12eda
+* author:	assetfactory (https://sketchfab.com/assetfactory)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

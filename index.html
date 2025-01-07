@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" 
+      content="Decay is an intense survival shooter where players must fight off relentless monsters in a decaying world, with only one chance to survive the chaos." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DECAY</title>
+    <link rel="icon" type="image/x-icon" href="Icon/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/keyboard-css@1.2.4/dist/css/main.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="overflow-hidden select-none pointer-events-none">
+    <img src="/Player/vignette.png" aria-hidden="true" id="vignette" />
+    <img src="/Player/damage1.png" aria-hidden="true" id="damage" />
+    <div id="loading-screen">
+      <div class="bg-glitch"></div>
+      <div class="loading-background"></div>
+      <div class="scan-line"></div>
+      <svg class="floating-hex hex-1" viewBox="0 0 100 100">
+        <polygon points="50,0 100,25 100,75 50,100 0,75 0,25" fill="none" stroke="#F0EC8B" />
+      </svg>
+      <svg class="floating-hex hex-2" viewBox="0 0 100 100">
+        <polygon points="50,0 100,25 100,75 50,100 0,75 0,25" fill="none" stroke="#F0EC8B" />
+      </svg>
+      <svg class="floating-hex hex-3" viewBox="0 0 100 100">
+        <polygon points="50,0 100,25 100,75 50,100 0,75 0,25" fill="none" stroke="#F0EC8B" />
+      </svg>
+      <div class="loading-content">
+        <h1 class="game-title">DECAY</h1>
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill">
+              <div class="progress-highlight"></div>
+            </div>
+          </div>
+          <div class="progress-text">0%</div>
+        </div>
+        <div class="loading-status">
+          <div class="loading-message">LOADING GAME ASSETS</div>
+          <div class="wait-text">PLEASE WAIT</div>
+        </div>
+        <div class="tip-container">
+          <div class="tip-title">COMBAT TIP</div>
+          <div class="tip-text"></div>
+        </div>
+      </div>
+      <div class="loading-footer">
+        VERSION 1.0.0
+      </div>
+    </div>
+    <div id="death-screen">
+      <div class="vignette"></div>
+      <div class="glitch-lines"></div>
+      <div class="digital-noise"></div>
+      <div class="crt-effect"></div>
+      <div class="glitch-overlay"></div>
+      <div class="scan-line scan-line-death"></div>
+      <div class="death-content">
+        <h1 class="death-title">ELIMINATED</h1>
+        <div class="killed-by">ANOTHER ONE LOST TO THE DECAY</div>
+        <div class="horizontal-line"></div>
+        <div class="stats">
+          <div class="kill-stat"><span id="kills-stat">0</span> KILLS</div>
+        </div>
+        <button class="action-button" id="restart">RETRY</button>
+      </div>
+    </div>
+    <div id="mini-map"></div>
+    <div id="controls" class="fixed top-6 left-1/2 transform -translate-x-1/2 mt-8 text-center text-[#555]">
+      <p>Move</p>
+      <div class="w mb-4">
+        <kbd class="kbc-button">W</kbd>
+      </div>
+      <div class="flex gap-4 mb-4 justify-center">
+        <kbd class="kbc-button">A</kbd>
+        <kbd class="kbc-button">S</kbd>
+        <kbd class="kbc-button">D</kbd>
+      </div>
+      <p>Sprint</p>
+      <kbd class="kbc-button mb-4">Shift</kbd>
+      <p>Jump</p>
+      <kbd class="kbc-button mb-4 w-[200px] text-center">Space</kbd>
+      <p>Shoot</p>
+      <kbd class="kbc-button mb-4">Left Mouse Click</kbd>
+      <p>Aim Down Sights</p>
+      <kbd class="kbc-button mb-4">Right Mouse Click</kbd>
+      <div class="flex gap-4 justify-center items-center mt-4">
+        <p>Reload</p>
+        <kbd class="kbc-button mb-4">R</kbd>
+        <p>Crouch</p>
+        <kbd class="kbc-button mb-4">C</kbd>
+        <p>Controls</p>
+        <kbd class="kbc-button mb-4">P</kbd>
+      </div>
+      <p>Escape Pointer Lock</p>
+      <kbd class="kbc-button mb-4">Esc</kbd>
+    </div>
+    <div class="hud">
+      <div class="kill-count">
+        <i class="fa-solid fa-skull"></i>
+        <span id="kill-display">0</span>
+        <span id="kill-increment">+1</span>
+      </div>
+      <div class="health-hud">
+        <h2>HEALTH</h2>
+        <span class="plus">+</span>
+        <span id="health">100</span>
+      </div>
+      <div id="armor-hud">
+        <h2>ARMOUR</h2>
+        <span class="armor-symbol">⛨</span>
+        <span id="armor">25</span>
+      </div>
+      <div id="warning-text">
+        <h2>ARMOR BROKEN</h2>
+      </div>
+      <div class="ammo-hud">
+        <img class="gun-icon" src="Other/m16a2.png" alt="M16A2" />
+        <div id="ammo-displayer"></div>
+        <div id="chambered-bullet" class="active">+1</div>
+        <div class="ammo-stats">
+          <span class="gun-type">M16A2</span>
+          <span id="ammo-current">30</span> <span class="divider">/</span>
+          <span id="ammo-max">30</span>
+        </div>
+      </div>
+    </div>
+    <script src="./src/main.js" type="module"></script>
+  </body>
+</html>

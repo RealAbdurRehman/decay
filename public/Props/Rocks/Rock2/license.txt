@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rock platform low poly
+* source:	https://sketchfab.com/3d-models/rock-platform-low-poly-26203ae6b0a8442ca0e2775cf0efd6a6
+* author:	doublesob (https://sketchfab.com/ssorpeg)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rock platform low poly" (https://sketchfab.com/3d-models/rock-platform-low-poly-26203ae6b0a8442ca0e2775cf0efd6a6) by doublesob (https://sketchfab.com/ssorpeg) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

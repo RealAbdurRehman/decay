@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Stylized 2D Grass
+* source:	https://sketchfab.com/3d-models/low-poly-stylized-2d-grass-e83f81adddbf46fa89c6f49f5fcf15dc
+* author:	Gatyh Interactive (https://sketchfab.com/lucas.antongomez)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Stylized 2D Grass" (https://sketchfab.com/3d-models/low-poly-stylized-2d-grass-e83f81adddbf46fa89c6f49f5fcf15dc) by Gatyh Interactive (https://sketchfab.com/lucas.antongomez) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
