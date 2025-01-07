@@ -23,9 +23,9 @@ export default class Terrain {
     width = 2000,
     depth = 2000,
     detail = { width: 282, height: 282 },
-    propsPerChunk = 1,
-    chunkSize = 10,
-    renderDistance = 25,
+    propsPerChunk = 4,
+    chunkSize = 25,
+    renderDistance = 50,
   }) {
     this.scene = scene;
     this.width = width;
